@@ -1,6 +1,7 @@
 ARG BUILD_VERSION=0.0.1
+ARG PLATFORM=arm64
 
-FROM debian:bookworm-slim
+FROM --platform=${PLATFORM} debian:bookworm-slim
 
 RUN apt-get update && \
     apt-get install -y gpg ca-certificates curl wget gnupg && \
