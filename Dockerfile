@@ -1,5 +1,6 @@
 ARG BUILD_VERSION=0.0.1
-ARG PLATFORM=arm64
+# linux/amd64
+ARG PLATFORM=linux/arm64/v8
 
 FROM --platform=${PLATFORM} debian:bookworm-slim
 
